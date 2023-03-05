@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Object Editor for Zigy</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="editor">
+    <h2>Editor</h2>
+    <label for="color">Color:</label>
+    <input type="color" id="color" value="#ffffff">
+    <label for="text">Text:</label>
+    <input type="text" id="text" placeholder="Enter text">
+  </div>
+  <canvas id="overlay"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
